@@ -1,0 +1,9 @@
+dist/
+schemas/gschemas.compiled
+node_modules/
+schemas/gschemas.compiled.*
+*.shell-extension.zip
+.DS_Store
+*.log
+.idea/
+.vscode/

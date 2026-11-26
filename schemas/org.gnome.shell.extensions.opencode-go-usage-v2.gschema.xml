@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.opencode-go-usage-v2"
+          path="/org/gnome/shell/extensions/opencode-go-usage-v2/">
+
+    <key name="refresh-interval" type="i">
+      <default>5</default>
+      <range min="1" max="60"/>
+      <summary>Refresh interval in minutes</summary>
+      <description>How often the usage endpoint is polled while the session is running.</description>
+    </key>
+
+    <key name="panel-metric" type="s">
+      <default>'auto'</default>
+      <choices>
+        <choice value="auto"/>
+        <choice value="rolling"/>
+        <choice value="weekly"/>
+        <choice value="monthly"/>
+      </choices>
+      <summary>Which meter to show in the panel</summary>
+      <description>auto shows the most constrained window. A specific meter can also be pinned.</description>
+    </key>
+
+    <key name="show-percentage" type="b">
+      <default>true</default>
+      <summary>Show the percentage next to the panel gauge</summary>
+    </key>
+
+    <key name="notify-enabled" type="b">
+      <default>true</default>
+      <summary>Send quota notifications</summary>
+    </key>
+
+    <key name="notify-threshold" type="i">
+      <default>80</default>
+      <range min="50" max="100"/>
+      <summary>Notification threshold in percent</summary>
+    </key>
+
+    <key name="notify-rate-limit" type="b">
+      <default>true</default>
+      <summary>Notify when a meter is rate-limited</summary>
+    </key>
+
+    <key name="credentials-revision" type="i">
+      <default>0</default>
+      <summary>Internal revision bumped when the stored API key changes</summary>
+      <description>The extension watches this value to drop caches and reload the key.</description>
+    </key>
+
+    <key name="auto-import-key" type="b">
+      <default>true</default>
+      <summary>Automatically import the active OpenCode Go key</summary>
+      <description>When the keyring is empty, read the active Go credential from the local opencode CLI and save it to the keyring.</description>
+    </key>
+
+    <key name="endpoint" type="s">
+      <default>'https://opencode.ai/inference/go/v1/usage'</default>
+      <summary>Usage endpoint</summary>
+      <description>Advanced override for the OpenCode Go usage endpoint. Leave at the default unless using a compatible proxy.</description>
+    </key>
+
+  </schema>
+</schemalist>

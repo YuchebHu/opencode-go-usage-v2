@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install GSettings compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libglib2.0-bin
+      - name: Check syntax and schema
+        run: make check
+      - name: Run unit tests
+        run: npm test

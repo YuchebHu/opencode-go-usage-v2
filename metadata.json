@@ -1,0 +1,18 @@
+{
+  "uuid": "opencode-go-usage-v2@local",
+  "name": "OpenCode Go 额度",
+  "description": "在 GNOME 顶栏查看 OpenCode Go 的 5 小时、每周与每月额度。支持自动导入 OpenCode 密钥、密钥环存储、现代化仪表盘、端点覆盖、桌面通知与命令行工具。",
+  "url": "https://github.com/YuchebHu/opencode-go-usage-v2",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.opencode-go-usage-v2",
+  "version": 3,
+  "version-name": "2.1.0",
+  "session-modes": [
+    "user"
+  ]
+}

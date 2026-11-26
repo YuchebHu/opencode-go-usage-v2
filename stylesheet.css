@@ -1,0 +1,439 @@
+/* OpenCode Go usage indicator — GNOME Shell theme */
+
+/* ---------- Panel ---------- */
+
+.ocgo-panel-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: inherit;
+}
+
+.ocgo-panel-label-warning {
+    color: #fbbf24;
+}
+
+.ocgo-panel-label-critical,
+.ocgo-panel-label-limited {
+    color: #fb7185;
+}
+
+/* ---------- Popup shell ---------- */
+
+.ocgo-menu {
+    padding: 14px;
+}
+
+.ocgo-menu-item {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.ocgo-content {
+    padding: 0;
+}
+
+/* ---------- Header ---------- */
+
+.ocgo-brand {
+    background-gradient-direction: horizontal;
+    background-gradient-start: #4f8cff;
+    background-gradient-end: #a855f7;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.ocgo-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: inherit;
+}
+
+.ocgo-subtitle {
+    font-size: 10.5px;
+}
+
+.ocgo-dim {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.ocgo-light .ocgo-dim {
+    color: rgba(0, 0, 0, 0.62);
+}
+
+/* ---------- Status pill ---------- */
+
+.ocgo-pill {
+    border-radius: 999px;
+    padding: 3px 9px;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.ocgo-pill-ok {
+    color: #34d399;
+    background-color: rgba(52, 211, 153, 0.14);
+}
+
+.ocgo-pill-warning {
+    color: #fbbf24;
+    background-color: rgba(251, 191, 36, 0.15);
+}
+
+.ocgo-pill-critical,
+.ocgo-pill-limited {
+    color: #fb7185;
+    background-color: rgba(251, 113, 133, 0.16);
+}
+
+.ocgo-pill-muted {
+    color: rgba(255, 255, 255, 0.62);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.ocgo-light .ocgo-pill-muted {
+    color: rgba(0, 0, 0, 0.58);
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.ocgo-light .ocgo-pill-ok {
+    color: #047857;
+    background-color: rgba(5, 150, 105, 0.10);
+}
+
+.ocgo-light .ocgo-pill-warning {
+    color: #b45309;
+    background-color: rgba(217, 119, 6, 0.10);
+}
+
+.ocgo-light .ocgo-pill-critical,
+.ocgo-light .ocgo-pill-limited {
+    color: #b91c1c;
+    background-color: rgba(220, 38, 38, 0.10);
+}
+
+/* ---------- Cards ---------- */
+
+.ocgo-card {
+    padding: 12px 14px;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.ocgo-light .ocgo-card {
+    background-color: rgba(0, 0, 0, 0.055);
+    border-color: rgba(0, 0, 0, 0.10);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+.ocgo-card-title {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: inherit;
+}
+
+.ocgo-card-state {
+    font-size: 10.5px;
+    font-weight: 600;
+}
+
+.ocgo-card-detail {
+    font-size: 10.5px;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.ocgo-percent {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.ocgo-percent-hint {
+    font-size: 10px;
+    padding-top: 3px;
+}
+
+.ocgo-tone-ok {
+    color: #34d399;
+}
+
+.ocgo-tone-warning {
+    color: #fbbf24;
+}
+
+.ocgo-tone-critical,
+.ocgo-tone-limited {
+    color: #fb7185;
+}
+
+.ocgo-tone-muted {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.ocgo-light .ocgo-tone-ok {
+    color: #059669;
+}
+
+.ocgo-light .ocgo-tone-warning {
+    color: #b45309;
+}
+
+.ocgo-light .ocgo-tone-critical,
+.ocgo-light .ocgo-tone-limited {
+    color: #dc2626;
+}
+
+.ocgo-light .ocgo-tone-muted {
+    color: rgba(0, 0, 0, 0.58);
+}
+
+.ocgo-light .ocgo-card-detail {
+    color: rgba(0, 0, 0, 0.58);
+}
+
+/* ---------- Buttons ---------- */
+
+.ocgo-icon-btn {
+    padding: 7px;
+    border-radius: 9px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.ocgo-icon-btn:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+    color: #ffffff;
+}
+
+.ocgo-icon-btn:active {
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.ocgo-icon-btn:focus {
+    box-shadow: inset 0 0 0 2px rgba(96, 165, 250, 0.70);
+}
+
+.ocgo-icon-btn:insensitive {
+    color: rgba(255, 255, 255, 0.28);
+}
+
+.ocgo-light .ocgo-icon-btn {
+    color: rgba(0, 0, 0, 0.72);
+}
+
+.ocgo-light .ocgo-icon-btn:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.ocgo-light .ocgo-icon-btn:insensitive {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.ocgo-icon-btn:insensitive {
+    background-color: transparent;
+}
+
+.ocgo-btn {
+    border-radius: 9px;
+    padding: 6px 12px;
+    background-color: rgba(255, 255, 255, 0.09);
+    color: inherit;
+}
+
+.ocgo-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.ocgo-btn:active {
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.ocgo-btn:focus {
+    box-shadow: inset 0 0 0 2px rgba(96, 165, 250, 0.70);
+}
+
+.ocgo-btn-label {
+    font-size: 10.5px;
+    font-weight: 600;
+    color: inherit;
+}
+
+.ocgo-btn-primary {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+.ocgo-btn-primary:hover {
+    background-color: #4f8cff;
+}
+
+.ocgo-btn-primary:active {
+    background-color: #2f6fe0;
+}
+
+.ocgo-btn-primary .ocgo-btn-label {
+    color: #ffffff;
+}
+
+.ocgo-btn-destructive {
+    color: #fb7185;
+}
+
+.ocgo-btn-small {
+    padding: 3px 8px;
+}
+
+.ocgo-btn-small .ocgo-btn-label {
+    font-size: 10px;
+}
+
+.ocgo-light .ocgo-btn {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.ocgo-light .ocgo-btn:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.ocgo-light .ocgo-btn-primary {
+    background-color: #2563eb;
+}
+
+.ocgo-light .ocgo-btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+/* ---------- Error banner ---------- */
+
+.ocgo-banner {
+    padding: 8px 10px;
+    border-radius: 11px;
+    background-color: rgba(251, 191, 36, 0.10);
+    border: 1px solid rgba(251, 191, 36, 0.20);
+}
+
+.ocgo-banner-icon {
+    color: #fbbf24;
+}
+
+.ocgo-banner-text {
+    font-size: 10.5px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.ocgo-light .ocgo-banner {
+    background-color: rgba(217, 119, 6, 0.08);
+    border-color: rgba(217, 119, 6, 0.18);
+}
+
+.ocgo-light .ocgo-banner-icon {
+    color: #b45309;
+}
+
+.ocgo-light .ocgo-banner-text {
+    color: rgba(0, 0, 0, 0.72);
+}
+
+/* ---------- Empty / setup / error states ---------- */
+
+.ocgo-empty {
+    padding: 24px 18px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.ocgo-empty-icon {
+    color: #93c5fd;
+}
+
+.ocgo-empty-icon-error {
+    color: #fbbf24;
+}
+
+.ocgo-empty-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: inherit;
+}
+
+.ocgo-empty-body {
+    font-size: 10.5px;
+    text-align: center;
+}
+
+.ocgo-light .ocgo-empty {
+    background-color: rgba(0, 0, 0, 0.045);
+    border-color: rgba(0, 0, 0, 0.10);
+}
+
+.ocgo-light .ocgo-empty-icon {
+    color: #2563eb;
+}
+
+.ocgo-light .ocgo-empty-icon-error {
+    color: #b45309;
+}
+
+/* ---------- Footer ---------- */
+
+.ocgo-divider {
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+.ocgo-footer-text {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.ocgo-footer-warn {
+    color: #fbbf24;
+}
+
+.ocgo-footer-btn {
+    padding: 3px 7px;
+    border-radius: 7px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.ocgo-footer-btn:hover {
+    background-color: rgba(255, 255, 255, 0.09);
+    color: #ffffff;
+}
+
+.ocgo-footer-btn:focus {
+    box-shadow: inset 0 0 0 2px rgba(96, 165, 250, 0.70);
+}
+
+.ocgo-footer-btn-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: inherit;
+}
+
+.ocgo-light .ocgo-divider {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+.ocgo-light .ocgo-footer-text {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.ocgo-light .ocgo-footer-warn {
+    color: #b45309;
+}
+
+.ocgo-light .ocgo-footer-btn {
+    color: rgba(0, 0, 0, 0.58);
+}
+
+.ocgo-light .ocgo-footer-btn:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+    color: rgba(0, 0, 0, 0.9);
+}

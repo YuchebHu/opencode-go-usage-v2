@@ -1,0 +1,19 @@
+{
+  "name": "opencode-go-usage-v2",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "description": "GNOME 顶栏的 OpenCode Go 额度指示器",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuchebHu/opencode-go-usage-v2.git"
+  },
+  "homepage": "https://github.com/YuchebHu/opencode-go-usage-v2#readme",
+  "bugs": {
+    "url": "https://github.com/YuchebHu/opencode-go-usage-v2/issues"
+  }
+}
